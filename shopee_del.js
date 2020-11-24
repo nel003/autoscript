@@ -15,12 +15,13 @@ function makeid(length) {
    return result;
 
 }
+function ShopDel() {
+   var ranEmail = makeid(15)+"@gmail.com";
 
-var ranEmail = makeid(15)+"@gmail.com";
+   document.querySelector(".page_hide").style.display="none";
 
-document.querySelector(".page_hide").style.display="none";
+   document.querySelector(".custom_select").style.display="none";
 
-document.querySelector(".custom_select").style.display="none";
-
-document.getElementById("email-input").value = ranEmail;
+   document.getElementById("email-input").value = ranEmail;
+}
 
