@@ -1,5 +1,5 @@
 var pageHide03 = document.querySelector(".page_hide");
-var customSelect03 = document.querySelectorAll(".custom_select");
+var customSelect03 = document.querySelectorAll("iframe");
 var body03 = document.querySelector("body");
 var email03 = document.getElementById("email-input");
 var ranEmail = makeid(15) + "@gmail.com";
@@ -15,7 +15,9 @@ function makeid(length) {
 }
 
 function hideReasonBox() {
-  customSelect03[customSelect03.length - 1].style.display = "none";
+  customSelect03.forEach(i => {
+    i.style.display = "none";
+  })
   pageHide03.style.display = "none";
   body03.style.height = "100vh";
   email03.value = ranEmail;
